@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thị Giác Máy Tính</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h2 style="color: red; text-align: center;">Thị Giác Máy Tính</h2>
+
+        <!-- Câu hỏi 1 -->
+        <div class="question-container">
+            <div class="question-title">
+                Tại sao thư viện NumPy được coi là cải thiện hiệu suất trong xử lý dữ liệu số học so với việc sử dụng
+                list Python thông thường?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q1" id="q1-option1">
+                    <label for="q1-option1">Vì NumPy có nhiều tính năng hình học tích hợp.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q1" id="q1-option2">
+                    <label for="q1-option2">Vì NumPy hỗ trợ chuỗi dữ liệu số học một chiều.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q1" id="q1-option3">
+                    <label for="q1-option3">Vì NumPy có củ pháp ngắn gọn hơn so với Python list.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q1" id="q1-option4">
+                    <label for="q1-option4">Vì NumPy được viết bằng C, làm cho nó nhanh hơn trong xử lý dữ liệu số
+                        học.</label>
+                </li>
+            </ul>
+            <div id="result-q1"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 2 -->
+        <div class="question-container">
+            <div class="question-title">
+                Biểu đồ hình tròn (pie chart) thường được sử dụng để
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q2" id="q2-option1">
+                    <label for="q2-option1">Hiện thị thay đổi của dữ liệu theo thời gian</label>
+                </li>
+                <li>
+                    <input type="radio" name="q2" id="q2-option2">
+                    <label for="q2-option2">Biểu diễn mối quan hệ giữa các phần tử dữ liêu bằng các cột dọc</label>
+                </li>
+                <li>
+                    <input type="radio" name="q2" id="q2-option3">
+                    <label for="q2-option3">Hiển thị dữ liêu không có thứ tư cụ thể</label>
+                </li>
+                <li>
+                    <input type="radio" name="q2" id="q2-option4">
+                    <label for="q2-option4">So sánh tỷ lệ phần trăm của các phần tử dữ liệu so với tổng thể</label>
+                </li>
+            </ul>
+            <div id="result-q2"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 3 -->
+        <div class="question-container">
+            <div class="question-title">
+                Biểu đồ histogram của ảnh xâm thể hiện gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q3" id="q3-option1">
+                    <label for="q3-option1">Tần suất xuất hiện của các cường độ ánh sáng trong ảnh xám</label>
+                </li>
+                <li>
+                    <input type="radio" name="q3" id="q3-option2">
+                    <label for="q3-option2">Các đường biểu diễn dữ liệu dưới dạng các cốt dọc</label>
+                </li>
+                <li>
+                    <input type="radio" name="q3" id="q3-option3">
+                    <label for="q3-option3">Cường độ ánh sáng của ảnh theo thời gian</label>
+                </li>
+                <li>
+                    <input type="radio" name="q3" id="q3-option4">
+                    <label for="q3-option4">Sự thay đổi của màu sắc trong ảnh</label>
+                </li>
+            </ul>
+            <div id="result-q3"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 4 -->
+        <div class="question-container">
+            <div class="question-title">
+                Kết nổi các hàm và ý nghĩa tương ứng trong thư viện numpy
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="mean">mean</label>
+                    <select id="mean" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-mean"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="min">min</label>
+                    <select id="min" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-min"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="max">max</label>
+                    <select id="max" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-max"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="std">std</label>
+                    <select id="std" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-std"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="var">var</label>
+                    <select id="var" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-var"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="dot">dot</label>
+                    <select id="dot" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-dot"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="sum">sum</label>
+                    <select id="sum" class="dropdown">
+                        <option value="giá trị trung bình của mảng">giá trị trung bình của mảng</option>
+                        <option value="giá trị nhỏ nhất trong mảng">giá trị nhỏ nhất trong mảng</option>
+                        <option value="giá trị lớn nhất trong mảng">giá trị lớn nhất trong mảng</option>
+                        <option value="độ lệch chuẩn của mảng">độ lệch chuẩn của mảng</option>
+                        <option value="phương sai của mảng">phương sai của mảng</option>
+                        <option value="tổng tích chập">tổng tích chập</option>
+                        <option value="tổng của mảng">tổng của mảng</option>
+                    </select>
+                    <div id="result-sum"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi 5 -->
+        <div class="question-container">
+            <div class="question-title">
+                Khi bạn thực hiện lệnh sau trong NumPy <span style="color: red;">np.linspace(0, 15, nun=6)</span> giá
+                trị của <span style="color: red;">a</span> là gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q5" id="q5-option1">
+                    <label for="q5-option1">[0. 3.75, 7.5. 11.25. 15.1]</label>
+                </li>
+                <li>
+                    <input type="radio" name="q5" id="q5-option2">
+                    <label for="q5-option2">[0. 3. 6. 9. 12. 15.]</label>
+                </li>
+                <li>
+                    <input type="radio" name="q5" id="q5-option3">
+                    <label for="q5-option3">[0. 2. 4. 6. 8. 10.]</label>
+                </li>
+                <li>
+                    <input type="radio" name="q5" id="q5-option4">
+                    <label for="q5-option4">[0. 2.5 5. 7.5 10.]</label>
+                </li>
+            </ul>
+            <div id="result-q5"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 6 -->
+        <div class="question-container">
+            <div class="question-title">
+                Thư viện Pillow trong Python chủ yếu được sử dụng để làm gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q6" id="q6-option1">
+                    <label for="q6-option1">Xử lý hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q6" id="q6-option2">
+                    <label for="q6-option2">Xử lý văn bản</label>
+                </li>
+                <li>
+                    <input type="radio" name="q6" id="q6-option3">
+                    <label for="q6-option3">Xử lý dữ liệu số học</label>
+                </li>
+                <li>
+                    <input type="radio" name="q6" id="q6-option4">
+                    <label for="q6-option4">Xử lý âm thanh</label>
+                </li>
+            </ul>
+            <div id="result-q6"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 7 -->
+        <div class="question-container">
+            <div class="question-title">
+                Cân bằng lược đồ ảnh xám trong xử lý ảnh có ý nghĩa gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q7" id="q7-option1">
+                    <label for="q7-option1">Tăng độ tương phản và làm cho ảnh trở nên rõ ràng hơn</label>
+                </li>
+                <li>
+                    <input type="radio" name="q7" id="q7-option2">
+                    <label for="q7-option2">Loại bỏ tất cả màu sắc khỏi ảnh và chuyển nó thành ảnh đen trắng</label>
+                </li>
+                <li>
+                    <input type="radio" name="q7" id="q7-option3">
+                    <label for="q7-option3">Đảm bảo rằng ảnh không bị méo mô và giữ nguyên tỷ lệ khung hình</label>
+                </li>
+                <li>
+                    <input type="radio" name="q7" id="q7-option4">
+                    <label for="q7-option4">Tăng cương màu sắc cho ảnh</label>
+                </li>
+            </ul>
+            <div id="result-q7"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 8 -->
+        <div class="question-container">
+            <div class="question-title">
+                Để kết nối hai măng NumPy với cùng số chiều, bạn thường sử dụng hàm _____()?
+                (viết tên hàm, viết thường, không có khoảng trắng, không có phần ngoặc đơn)
+            </div>
+            <input type="text" id="q8" placeholder="Nhập tên hàm">
+            </ul>
+            <div id="result-q8"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 9 -->
+        <div class="question-container">
+            <div class="question-title">
+                Khi chuyển một hình ảnh từ ảnh màu (RGB) sang ảnh xám, điều gì là đúng về việc này? (Chọn tất cả những
+                câu trả lời đúng)
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="checkbox" name="q9" id="q9-option1">
+                    <label for="q9-option1">Không làm mất mát thông tin màu sắc</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="q9" id="q9-option2">
+                    <label for="q9-option2">Giảm nhiễu </label>
+                </li>
+                <li>
+                    <input type="checkbox" name="q9" id="q9-option3">
+                    <label for="q9-option3">Tiết kiệm dung lượng lưu trữ</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="q9" id="q9-option4">
+                    <label for="q9-option4">Giảm chi phí tỉnh toàn</label>
+                </li>
+            </ul>
+            <div id="result-q9"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 10 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong đoạn mã Python sau<br>
+                <pre>
+                    <code>
+def get_image_list(folder_path):
+    image_list = []
+    if os.path.exists(folder_path) and os.path.isdir(folder_path):
+        filenames = os.listdir(folder_path)
+        for filename in filenames:
+            file_path = os.path.join(folder_path, filename)
+            if os.path.isfile(file_path) and is_image_file(file_path):
+                load_image(file_path)
+                image_list.append(img)
+    return image_list
+                    </code>
+                </pre>
+                Hàm <span style="color: red;">get_image_list</span> thực hiện việc gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q10" id="q10-option1">
+                    <label for="q10-option1">Tạo một danh sách các tệp có trong folder_path</label>
+                </li>
+                <li>
+                    <input type="radio" name="q10" id="q10-option2">
+                    <label for="q10-option2">Tạo một danh sách các tệp hình ảnh có trong folder_path</label>
+                </li>
+                <li>
+                    <input type="radio" name="q10" id="q10-option3">
+                    <label for="q10-option3">Kiểm tra xem thư mục folder_path có tồn tại hay không</label>
+                </li>
+                <li>
+                    <input type="radio" name="q10" id="q10-option4">
+                    <label for="q10-option4">Tạo một danh sách các thư mục có trong folder_path</label>
+                </li>
+            </ul>
+            <div id="result-q10"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 11 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy chọn lựa hàm và ý nghĩa của nó khi sử dụng thư viện Numpy
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="ndim">ndim</label>
+                    <select id="ndim" class="dropdown">
+                        <option value="hiển thị số chiều">hiển thị số chiều</option>
+                        <option value="hiển thị kích thước">hiển thị kích thước</option>
+                        <option value="hiển thị số hàng và cột">hiển thị số hàng và cột</option>
+                    </select>
+                    <div id="result-ndim"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="size">size</label>
+                    <select id="size" class="dropdown">
+                        <option value="hiển thị số chiều">hiển thị số chiều</option>
+                        <option value="hiển thị kích thước">hiển thị kích thước</option>
+                        <option value="hiển thị số hàng và cột">hiển thị số hàng và cột</option>
+                    </select>
+                    <div id="result-size"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="shape">shape</label>
+                    <select id="shape" class="dropdown">
+                        <option value="hiển thị số chiều">hiển thị số chiều</option>
+                        <option value="hiển thị kích thước">hiển thị kích thước</option>
+                        <option value="hiển thị số hàng và cột">hiển thị số hàng và cột</option>
+                    </select>
+                    <div id="result-shape"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi 12 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy chọn lựa phát biểu đúng về ngôn ngữ lập trình Python?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q12" id="q12-option1">
+                    <label for="q12-option1">Ngôn ngữ lập trình tĩnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q12" id="q12-option2">
+                    <label for="q12-option2">Ngôn ngữ lập trình thông dịch</label>
+                </li>
+                <li>
+                    <input type="radio" name="q12" id="q12-option3">
+                    <label for="q12-option3">Ngôn ngữ lập trình biên dịch</label>
+                </li>
+                <li>
+                    <input type="radio" name="q12" id="q12-option4">
+                    <label for="q12-option4">Ngôn ngữ lập trình bậc thấp</label>
+                </li>
+            </ul>
+            <div id="result-q12"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 13 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong thư viện Pillow, hàm resize và hàm thumbnail được sử dụng để thay đổi kích thước của một hình ảnh.
+                Tuy nhiên, điểm khác biệt quan trọng giữa chúng là gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q13" id="q13-option1">
+                    <label for="q13-option1">Hàm resize thay đổi kích thước của hình ảnh gốc, trong khi hàm thumbnail
+                        tạo một bản sao của hình ảnh với kích thước đã thay đổi</label>
+                </li>
+                <li>
+                    <input type="radio" name="q13" id="q13-option2">
+                    <label for="q13-option2">Hàm resize thay đổi tỷ lệ kích thước của hình ảnh, trong khi hàm thumbnail
+                        duy trì tỷ lệ kích thước ban đầu</label>
+                </li>
+                <li>
+                    <input type="radio" name="q13" id="q13-option3">
+                    <label for="q13-option3">Hàm thumbnail chỉ hoạt động trên hình ảnh có độ phân giải thấp, trong khi
+                        hàm resize thích hợp cho hình ảnh có độ phân giải cao</label>
+                </li>
+                <li>
+                    <input type="radio" name="q13" id="q13-option4">
+                    <label for="q13-option4">Cả hai hàm đều trả về một hình ảnh mới với kích thước đã thay đổi</label>
+                </li>
+            </ul>
+            <div id="result-q13"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 14 -->
+        <div class="question-container">
+            <div class="question-title">
+                Mặt na Sobel và Prewitt thường được sử dụng trong xử lý ảnh để
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q14" id="q14-option1">
+                    <label for="q14-option1">Làm mờ ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q14" id="q14-option2">
+                    <label for="q14-option2">Tăng độ tương phản ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q14" id="q14-option3">
+                    <label for="q14-option3">Phát hiện biên ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q14" id="q14-option4">
+                    <label for="q14-option4">Chuyển đổi ảnh sang ảnh đen trắng</label>
+                </li>
+            </ul>
+            <div id="result-q14"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 15 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong OpenCV, để thu nhận hình ảnh từ webcam, bạn sử dụng hàm nào?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q15" id="q15-option1">
+                    <label for="q15-option1">cv2.grabFrame()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q15" id="q15-option2">
+                    <label for="q15-option2">cv2.loadImage()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q15" id="q15-option3">
+                    <label for="q15-option3">cv2.VideoCapture()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q15" id="q15-option4">
+                    <label for="q15-option4">cv2.captureImage()</label>
+                </li>
+            </ul>
+            <div id="result-q15"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 16 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong thư viện OpenCV, hàm nào được sử dụng để đóng tất cả các cửa số hiển thị?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q16" id="q16-option1">
+                    <label for="q16-option1">cv2.closeAllWindows()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q16" id="q16-option2">
+                    <label for="q16-option2">cv2.destroyAllWindows()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q16" id="q16-option3">
+                    <label for="q16-option3">cv2.closeAndDestroyWindows()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q16" id="q16-option4">
+                    <label for="q16-option4">cv2.destroyWindows()</label>
+                </li>
+            </ul>
+            <div id="result-q16"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 17 -->
+        <div class="question-container">
+            <div class="question-title">
+                Giả sử chúng ta muốn cắt một vùng hình chữ nhật từ hình ảnh của mình, bắt đầu từ x=1, y=48 và kết thúc
+                tại x=80, y=69. Dòng mã đúng để thực hiện việc cắt này là gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q17" id="q17-option1">
+                    <label for="q17-option1">Crop = image[48:80, 48:69]</label>
+                </li>
+                <li>
+                    <input type="radio" name="q17" id="q17-option2">
+                    <label for="q17-option2">Crop = image[80:69, 1:48]</label>
+                </li>
+                <li>
+                    <input type="radio" name="q17" id="q17-option3">
+                    <label for="q17-option3">Crop = image[1:48, 80:69]</label>
+                </li>
+                <li>
+                    <input type="radio" name="q17" id="q17-option4">
+                    <label for="q17-option4">Crop = image[48:69, 1:80]</label>
+                </li>
+            </ul>
+            <div id="result-q17"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 18 -->
+        <div class="question-container">
+            <div class="question-title">
+                FPS (Frames Per Second) là gì và chức năng của nó?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q18" id="q18-option1">
+                    <label for="q18-option1">FPS là việt tất của "Frames Per Second" và đo lường tốc độ mà hình ảnh thay
+                        đổi trong một trò chơi hoặc ứng dụng đa phương tiện</label>
+                </li>
+                <li>
+                    <input type="radio" name="q18" id="q18-option2">
+                    <label for="q18-option2">FPS là viết tắt của "Frames Per Second" và đo lường thời gian một hình ảnh
+                        chuyển đổi sang hình ảnh khác trong một trình diễn ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q18" id="q18-option3">
+                    <label for="q18-option3">FPS là viết tắt của "Frames Per Second" và đo lường tỷ lệ hình ảnh hoàn
+                        chỉnh trong một chuỗi hình.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q18" id="q18-option4">
+                    <label for="q18-option4">FPS là việt tắt của "Frames Per Second" và đo lường tốc độ xử lý dữ
+                        liêu</label>
+                </li>
+            </ul>
+            <div id="result-q18"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 19 -->
+        <div class="question-container">
+            <div class="question-title">
+                (Điền vào chỗ trống, các ô chỉ chứa 1 từ, viết thường, không có khoảng trắng)
+                Một hình ảnh có độ phân giải 1920x1080 có tổng công 1920 pixel theo chiều <input type="text"
+                    id="q19-horizontal" placeholder="Nhập">
+                và 1080 pixel theo chiều <input type="text" id="q19-vertical" placeholder="Nhập">
+            </div>
+            </ul>
+            <div id="result-q19"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 20 -->
+        <div class="question-container">
+            <div class="question-title">
+                Thư viện SciPy được xây dựng trên nền tảng nào?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q20" id="q20-option1">
+                    <label for="q20-option1">NumPy</label>
+                </li>
+                <li>
+                    <input type="radio" name="q20" id="q20-option2">
+                    <label for="q20-option2">Pandas</label>
+                </li>
+                <li>
+                    <input type="radio" name="q20" id="q20-option3">
+                    <label for="q20-option3">TensorFlow</label>
+                </li>
+                <li>
+                    <input type="radio" name="q20" id="q20-option4">
+                    <label for="q20-option4">Matplotlib</label>
+                </li>
+            </ul>
+            <div id="result-q20"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 21 -->
+        <div class="question-container">
+            <div class="question-title">
+                Lựa chọn phát biểu đúng nhất về video
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q21" id="q21-option1">
+                    <label for="q21-option1">Video là một tập hợp các hình ảnh tĩnh được sắp xếp theo thứ tự ngẫu
+                        nhiên</label>
+                </li>
+                <li>
+                    <input type="radio" name="q21" id="q21-option2">
+                    <label for="q21-option2">Video là một tập hợp các biểu đồ được biểu diễn theo một tốc độ cố định để
+                        tạo ra một dãy hình ảnh động.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q21" id="q21-option3">
+                    <label for="q21-option3">Video là một chuỗi các hình ảnh tĩnh được thể hiện theo một tốc độ cố định
+                        để tạo ra một dãy hình ảnh động</label>
+                </li>
+            </ul>
+            <div id="result-q21"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 22 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong thư viện OpenCV, hàm <span style="color:red">cv2.namedWindow()</span> được sử dụng để làm gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q22" id="q22-option1">
+                    <label for="q22-option1">Cài đặt kích thước cửa sổ hiền thị</label>
+                </li>
+                <li>
+                    <input type="radio" name="q22" id="q22-option2">
+                    <label for="q22-option2">Đặt tên cho một hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q22" id="q22-option3">
+                    <label for="q22-option3">Đặt tên cho một ổ đĩa lưu trữ hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q22" id="q22-option4">
+                    <label for="q22-option4">Tạo một cửa sổ mới để hiển thị hình ảnh</label>
+                </li>
+            </ul>
+            <div id="result-q22"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 23 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong thư viện OpenCV, hàm <span style="color: red;">split</span> được sử dụng để làm gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q23" id="q23-option1">
+                    <label for="q23-option1">Chia một hình ảnh thành nhiều hình ảnh con tương ứng với từng kênh màu
+                        (Blue, Green, Red)</label>
+                </li>
+                <li>
+                    <input type="radio" name="q23" id="q23-option2">
+                    <label for="q23-option2">Chia một hình ảnh thành nhiều hình ảnh con tương ứng với từng kênh màu
+                        (Green, Red, Blue)</label>
+                </li>
+                <li>
+                    <input type="radio" name="q23" id="q23-option3">
+                    <label for="q23-option3">Chia một hình ảnh thành nhiều hình ảnh con tương ứng với từng kênh màu
+                        (Red, Green, Blue)</label>
+                </li>
+            </ul>
+            <div id="result-q23"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 24 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong thư viện OpenCV, khi bạn đã kết thúc việc sử dụng webcam hoặc thiết bị ghi hình và muốn giải phóng
+                tài nguyên, hàm nào được sử dụng để thực hiện điều này? Cho biết "camera" là tên biến đang chiếm dụng
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q24" id="q24-option1">
+                    <label for="q24-option1">camera.close()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q24" id="q24-option2">
+                    <label for="q24-option2">cv2.closeCamera()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q24" id="q24-option3">
+                    <label for="q24-option3">cv2.releaseCamera()</label>
+                </li>
+                <li>
+                    <input type="radio" name="q24" id="q24-option4">
+                    <label for="q24-option4">camera.release()</label>
+                </li>
+            </ul>
+            <div id="result-q24"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 25 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy kết hợp đúng giữa các hàm và mô tả chức năng tương ứng của chúng, <span
+                    style="font-style: italic;">img</span> là tên biến chứa hình ảnh
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="datdd">Đọc ảnh từ đường dẫn</label>
+                    <select id="datdd" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-datdd"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="ittva">In thông tin về ảnh</label>
+                    <select id="ittva" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-ittva"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="lktcha">Lấy kích thước của hình ảnh</label>
+                    <select id="lktcha" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-lktcha"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="hthatmcs">Hiển thị hình ảnh trong một cửa sổ</label>
+                    <select id="hthatmcs" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-hthatmcs"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="tdvcmktg">Tạm dừng và chờ một khoảng thời gian</label>
+                    <select id="tdvcmktg" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-tdvcmktg"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="dcshtha">Đóng cửa sổ hiển thị hình ảnh</label>
+                    <select id="dcshtha" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-dcshtha"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="lhaamtm">Lưu hình ảnh vào một tệp mới</label>
+                    <select id="lhaamtm" class="dropdown">
+                        <option value="img = cv2.imread('path')">img = cv2.imread('path')</option>
+                        <option value="print(img)">print(img)</option>
+                        <option value="img.shape">img.shape</option>
+                        <option value="cv2.imshow('title', img)">cv2.imshow('title', img)</option>
+                        <option value="cv2.waitkey(time - milliseconds)">cv2.waitkey(time - milliseconds)</option>
+                        <option value="cv2.destroyWindows()">cv2.destroyWindows()</option>
+                        <option value="cv2.imwrite('path', img)">cv2.imwrite('path', img)</option>
+                    </select>
+                    <div id="result-lhaamtm"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi 26 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy kết hợp đúng giữa các hàm về hình ảnh và mô tả chức năng tương ứng của chúng trong thư viện OpenCV
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="line">cv2.line(a, b, c, d, e)</label>
+                    <select id="line" class="dropdown">
+                        <option value="vẽ đường thẳng trong hình ảnh">vẽ đường thẳng trong hình ảnh</option>
+                        <option value="vẽ hình chữ nhật trong hình ảnh">vẽ hình chữ nhật trong hình ảnh</option>
+                        <option value="vẽ hình tròn trong hình ảnh">vẽ hình tròn trong hình ảnh</option>
+                        <option value="chèn văn bản vào hình ảnh">chèn văn bản vào hình ảnh</option>
+                        <option value="vẽ hình elip trong hình ảnh">vẽ hình elip trong hình ảnh</option>
+                        <option value="vẽ đa giác (polyline) trong hình ảnh">vẽ đa giác (polyline) trong hình ảnh
+                        </option>
+                    </select>
+                    <div id="result-line"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="rectangle">cv2.rectangle(a, b, c, d)</label>
+                    <select id="rectangle" class="dropdown">
+                        <option value="vẽ đường thẳng trong hình ảnh">vẽ đường thẳng trong hình ảnh</option>
+                        <option value="vẽ hình chữ nhật trong hình ảnh">vẽ hình chữ nhật trong hình ảnh</option>
+                        <option value="vẽ hình tròn trong hình ảnh">vẽ hình tròn trong hình ảnh</option>
+                        <option value="chèn văn bản vào hình ảnh">chèn văn bản vào hình ảnh</option>
+                        <option value="vẽ hình elip trong hình ảnh">vẽ hình elip trong hình ảnh</option>
+                        <option value="vẽ đa giác (polyline) trong hình ảnh">vẽ đa giác (polyline) trong hình ảnh
+                        </option>
+                    </select>
+                    <div id="result-rectangle"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="circle">cv2.circle(a, b, c, d)</label>
+                    <select id="circle" class="dropdown">
+                        <option value="vẽ đường thẳng trong hình ảnh">vẽ đường thẳng trong hình ảnh</option>
+                        <option value="vẽ hình chữ nhật trong hình ảnh">vẽ hình chữ nhật trong hình ảnh</option>
+                        <option value="vẽ hình tròn trong hình ảnh">vẽ hình tròn trong hình ảnh</option>
+                        <option value="chèn văn bản vào hình ảnh">chèn văn bản vào hình ảnh</option>
+                        <option value="vẽ hình elip trong hình ảnh">vẽ hình elip trong hình ảnh</option>
+                        <option value="vẽ đa giác (polyline) trong hình ảnh">vẽ đa giác (polyline) trong hình ảnh
+                        </option>
+                    </select>
+                    <div id="result-circle"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="putText">cv2.putText(a, b, c, d, e, f)</label>
+                    <select id="putText" class="dropdown">
+                        <option value="vẽ đường thẳng trong hình ảnh">vẽ đường thẳng trong hình ảnh</option>
+                        <option value="vẽ hình chữ nhật trong hình ảnh">vẽ hình chữ nhật trong hình ảnh</option>
+                        <option value="vẽ hình tròn trong hình ảnh">vẽ hình tròn trong hình ảnh</option>
+                        <option value="chèn văn bản vào hình ảnh">chèn văn bản vào hình ảnh</option>
+                        <option value="vẽ hình elip trong hình ảnh">vẽ hình elip trong hình ảnh</option>
+                        <option value="vẽ đa giác (polyline) trong hình ảnh">vẽ đa giác (polyline) trong hình ảnh
+                        </option>
+                    </select>
+                    <div id="result-putText"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="ellipse">cv2.ellipse(a, b, c, d, e, f, g)</label>
+                    <select id="ellipse" class="dropdown">
+                        <option value="vẽ đường thẳng trong hình ảnh">vẽ đường thẳng trong hình ảnh</option>
+                        <option value="vẽ hình chữ nhật trong hình ảnh">vẽ hình chữ nhật trong hình ảnh</option>
+                        <option value="vẽ hình tròn trong hình ảnh">vẽ hình tròn trong hình ảnh</option>
+                        <option value="chèn văn bản vào hình ảnh">chèn văn bản vào hình ảnh</option>
+                        <option value="vẽ hình elip trong hình ảnh">vẽ hình elip trong hình ảnh</option>
+                        <option value="vẽ đa giác (polyline) trong hình ảnh">vẽ đa giác (polyline) trong hình ảnh
+                        </option>
+                    </select>
+                    <div id="result-ellipse"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="polylines">cv2.polylines(a, b, c, d)</label>
+                    <select id="polylines" class="dropdown">
+                        <option value="vẽ đường thẳng trong hình ảnh">vẽ đường thẳng trong hình ảnh</option>
+                        <option value="vẽ hình chữ nhật trong hình ảnh">vẽ hình chữ nhật trong hình ảnh</option>
+                        <option value="vẽ hình tròn trong hình ảnh">vẽ hình tròn trong hình ảnh</option>
+                        <option value="chèn văn bản vào hình ảnh">chèn văn bản vào hình ảnh</option>
+                        <option value="vẽ hình elip trong hình ảnh">vẽ hình elip trong hình ảnh</option>
+                        <option value="vẽ đa giác (polyline) trong hình ảnh">vẽ đa giác (polyline) trong hình ảnh
+                        </option>
+                    </select>
+                    <div id="result-polylines"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi 27 -->
+        <div class="question-container">
+            <div class="question-title">
+                <img style="margin-bottom: 10px;" src="./anh/27.png" alt="27" />
+                Mô hình nhận diện khuôn mặt ResNet của Dlib được sử dụng để làm gì trong đoạn mã?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q27" id="q27-option1">
+                    <label for="q27-option1">Hiển thị hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q27" id="q27-option2">
+                    <label for="q27-option2">Tính toán đặc trưng của khuôn mặt</label>
+                </li>
+                <li>
+                    <input type="radio" name="q27" id="q27-option3">
+                    <label for="q27-option3">Phát hiện khuôn mặt</label>
+                </li>
+            </ul>
+            <div id="result-q27"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 28 -->
+        <div class="question-container">
+            <div class="question-title">
+                Các tham số như <span style="color: red;">scalefactor</span>, <span style="color: red;"><span
+                        style="color: red;"></span></span>, và <span style="color: red;">minsize</span> trong hàm <span
+                    style="color: red;">detectMultiScale</span> được sử dụng để làm gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q28" id="q28-option1">
+                    <label for="q28-option1">Xác định ngưỡng nhận dạng</label>
+                </li>
+                <li>
+                    <input type="radio" name="q28" id="q28-option2">
+                    <label for="q28-option2">Định dạng độ chính xác của việc nhận dạng</label>
+                </li>
+                <li>
+                    <input type="radio" name="q28" id="q28-option3">
+                    <label for="q28-option3">Điều chỉnh kích thước cửa số trượt</label>
+                </li>
+                <li>
+                    <input type="radio" name="q28" id="q28-option4">
+                    <label for="q28-option4">Cài đặt mức độ mờ của hình ảnh</label>
+                </li>
+            </ul>
+            <div id="result-q28"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 29 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hàm <span style="color: red;">cv2.rectangle</span> được sử dụng để làm gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q29" id="q29-option1">
+                    <label for="q29-option1">Tạo ra một số ngẫu nhiên</label>
+                </li>
+                <li>
+                    <input type="radio" name="q29" id="q29-option2">
+                    <label for="q29-option2">Chuyển đổi kích thước của hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q29" id="q29-option3">
+                    <label for="q29-option3">Vẽ đường thẳng trên hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q29" id="q29-option4">
+                    <label for="q29-option4">Hiển thị hình chữ nhật xung quanh khuôn mặt được nhận dạng</label>
+                </li>
+            </ul>
+            <div id="result-q29"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 30 -->
+        <div class="question-container">
+            <div class="question-title">
+                Sau khi xác định được các vùng chứa khuôn mặt, chúng ta cần sử dụng những hàm nào để lấy được tọa độ của
+                gốc trải bên trên vùng nhận diện khuôn mặt?
+                point_a = face____<input type="text" id="q30-horizontal" placeholder="Nhập">(),
+                face____<input type="text" id="q30-vertical" placeholder="Nhập">()
+                (Viết chữ thường, không chứa khoảng trắng)
+            </div>
+            </ul>
+            <div id="result-q30"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 31 -->
+        <div class="question-container">
+            <div class="question-title">
+                Bài toán phát hiện khuôn mặt trong thị giác máy tính liên quan đến việc gì chính?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q31" id="q31-option1">
+                    <label for="q31-option1">Tìm ra các vùng trong hình ảnh chứa vật thể không xác định</label>
+                </li>
+                <li>
+                    <input type="radio" name="q31" id="q31-option2">
+                    <label for="q31-option2">Xác định vị trí và ranh giới của các đối tương trong hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q31" id="q31-option3">
+                    <label for="q31-option3">Phân loại các đối tượng trong hình ảnh thành các nhóm khác nhau</label>
+                </li>
+                <li>
+                    <input type="radio" name="q31" id="q31-option4">
+                    <label for="q31-option4">Xác định đặc điểm cụ thể của vật thể trong không gian 3D</label>
+                </li>
+            </ul>
+            <div id="result-q31"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 32 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong Dlib, mô hình nhận diện khuôn mặt ResNet được sử dụng để tính toán đặc trưng của khuôn mặt. Mỗi
+                vector đặc trưng có bao nhiều giá trị số thực?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q32" id="q32-option1">
+                    <label for="q32-option1">100 giá trị số thực</label>
+                </li>
+                <li>
+                    <input type="radio" name="q32" id="q32-option2">
+                    <label for="q32-option2">64 giá trị số thực</label>
+                </li>
+                <li>
+                    <input type="radio" name="q32" id="q32-option3">
+                    <label for="q32-option3">256 giá trị số thực</label>
+                </li>
+                <li>
+                    <input type="radio" name="q32" id="q32-option4">
+                    <label for="q32-option4">128 giá trị số thực</label>
+                </li>
+            </ul>
+            <div id="result-q32"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 33 -->
+        <div class="question-container">
+            <div class="question-title">
+                Caffe (Convolutional Architecture for Fast Feature Embedding) là gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q33" id="q33-option1">
+                    <label for="q33-option1">Một mô hình học sâu riêng biệt không liên quan đên xử lý hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="q33" id="q33-option2">
+                    <label for="q33-option2">Một chương trình đào tạo mô hình học sâu độc lập với các dự án khác</label>
+                </li>
+                <li>
+                    <input type="radio" name="q33" id="q33-option3">
+                    <label for="q33-option3">Một công cụ chỉ dành cho việc xử lý âm thanh trong lĩnh vực Deep
+                        Learning</label>
+                </li>
+                <li>
+                    <input type="radio" name="q33" id="q33-option4">
+                    <label for="q33-option4">Môt framework mã nguồn mở mạnh mẽ được phát triển để hỗ trợ xây dựng và
+                        huấn luyên mô hình học máy cho việc thị giác máy tính và xử lý hình ảnh</label>
+                </li>
+            </ul>
+            <div id="result-q33"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 35 -->
+        <div class="question-container">
+            <div class="question-title">
+                OpenCV Deep Neural Network (DNN) là gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q35" id="q35-option1">
+                    <label for="q35-option1">Một phần của Open Source Computer Vision Library (OpenCV) cho phép tích hợp
+                        và sử dụng mạng nơ-ron nọc sâu (Deep Learning) trong các ứng dụng thị giác máy tính</label>
+                </li>
+                <li>
+                    <input type="radio" name="q35" id="q35-option2">
+                    <label for="q35-option2">Một công cụ chỉ dành cho việc xử lý âm thanh trong OpenCV.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q35" id="q35-option3">
+                    <label for="q35-option3">Một loại mô hình nơ-ron sâu nêng biệt không liên quan đến OpenCV</label>
+                </li>
+                <li>
+                    <input type="radio" name="q35" id="q35-option4">
+                    <label for="q35-option4">Một chương trình đào tạo mô hình học sâu độc lập với OpenCV</label>
+                </li>
+            </ul>
+            <div id="result-q35"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 36 -->
+        <div class="question-container">
+            <div class="question-title">
+                Deep Learning trong trí tuệ nhân tạo (AI) là gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q36" id="q36-option1">
+                    <label for="q36-option1">Một cách tiếp cận máy học, không sử dụng mô hình nơ-ron</label>
+                </li>
+                <li>
+                    <input type="radio" name="q36" id="q36-option2">
+                    <label for="q36-option2">Một phương pháp chỉ tập trung vào việc học đặc trung đơn giản từ dữ
+                        liêu.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q36" id="q36-option3">
+                    <label for="q36-option3">Một phương pháp học máy chỉ sử dụng một lớp no-ron.</label>
+                </li>
+                <li>
+                    <input type="radio" name="q36" id="q36-option4">
+                    <label for="q36-option4">Một lĩnh vực tập trung vào việc sử dụng mạng nơ-ron sâu để học và áp dụng
+                        kiến thức từ dữ liệu</label>
+                </li>
+            </ul>
+            <div id="result-q36"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 37 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hàm <span style="color: red;">cv2.dnn.blobFromImage()</span> được sử dụng để làm gì?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q37" id="q37-option1">
+                    <label for="q37-option1">Đọc blob từ file</label>
+                </li>
+                <li>
+                    <input type="radio" name="q37" id="q37-option2">
+                    <label for="q37-option2">Đọc một hình ảnh từ file</label>
+                </li>
+                <li>
+                    <input type="radio" name="q37" id="q37-option3">
+                    <label for="q37-option3">Tạo blob từ ảnh đâu vào</label>
+                </li>
+                <li>
+                    <input type="radio" name="q37" id="q37-option4">
+                    <label for="q37-option4">Tính toán tỷ lệ pixel trung bình của ảnh</label>
+                </li>
+            </ul>
+            <div id="result-q37"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 38 -->
+        <div class="question-container">
+            <div class="question-title">
+                Google Colab hỗ trợ các môi trường lập trình nào sau đây?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q38" id="q38-option1">
+                    <label for="q38-option1">Python và Java</label>
+                </li>
+                <li>
+                    <input type="radio" name="q38" id="q38-option2">
+                    <label for="q38-option2">Python và C++</label>
+                </li>
+                <li>
+                    <input type="radio" name="q38" id="q38-option3">
+                    <label for="q38-option3">Chi Python</label>
+                </li>
+                <li>
+                    <input type="radio" name="q38" id="q38-option4">
+                    <label for="q38-option4">Python và R</label>
+                </li>
+            </ul>
+            <div id="result-q38"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 39 -->
+        <div class="question-container">
+            <div class="question-title">
+                Random Forest thuộc loại nào trong các thuật toán học mày sau đây?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q39" id="q39-option1">
+                    <label for="q39-option1">Reinforcement Learning Algorithm</label>
+                </li>
+                <li>
+                    <input type="radio" name="q39" id="q39-option2">
+                    <label for="q39-option2">Dimensionality Reduction Algonthm</label>
+                </li>
+                <li>
+                    <input type="radio" name="q39" id="q39-option3">
+                    <label for="q39-option3">Clustering Algorithm</label>
+                </li>
+                <li>
+                    <input type="radio" name="q39" id="q39-option4">
+                    <label for="q39-option4">Ensemble Leaming Algonthm</label>
+                </li>
+            </ul>
+            <div id="result-q39"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 40 -->
+        <div class="question-container">
+            <div class="question-title">
+                Thuật toán học máy nào chủ yếu được sử dụng cho các bài toán phân loại và hồi quy, tập trung vào việc
+                tìm ra ranh giới phân chia tốt nhất giữa các lớp dữ liệu và sử dụng các điểm dữ liệu quan trọng?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q40" id="q40-option1">
+                    <label for="q40-option1">Support Vector Machines (SVM)</label>
+                </li>
+                <li>
+                    <input type="radio" name="q40" id="q40-option2">
+                    <label for="q40-option2">K-Means</label>
+                </li>
+                <li>
+                    <input type="radio" name="q40" id="q40-option3">
+                    <label for="q40-option3">Naive Bayes</label>
+                </li>
+                <li>
+                    <input type="radio" name="q40" id="q40-option4">
+                    <label for="q40-option4">Decision Trees</label>
+                </li>
+            </ul>
+            <div id="result-q40"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 41 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hàm get_report được sử dụng để đánh giá hiệu suất của mô hình học máy. Hãy chọn câu trả lời đúng về mục
+                đích và đầu ra của hàm này
+                <img style="margin-top: 10px;" src="./anh/41.png" alt="41" />
+
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q41" id="q41-option1">
+                    <label for="q41-option1">Xử lý các thông số bị thiếu trên tập đào tạo và tập kiểm thử</label>
+                </li>
+                <li>
+                    <input type="radio" name="q41" id="q41-option2">
+                    <label for="q41-option2">In ra các thông số như độ chính xác và F1 Score của mô hình trên tập huấn
+                        luyên và tập kiểm thử</label>
+                </li>
+                <li>
+                    <input type="radio" name="q41" id="q41-option3">
+                    <label for="q41-option3">Huẩn luyện mô hình trên dữ liệu đầu vào và xuất ra các độ đo hiệu
+                        suất</label>
+                </li>
+                <li>
+                    <input type="radio" name="q41" id="q41-option4">
+                    <label for="q41-option4">Xác định mức chênh lệch giữa tập đào tạo và tập kiểm thử</label>
+                </li>
+            </ul>
+            <div id="result-q41"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 42 -->
+        <div class="question-container">
+            <div class="question-title">
+                Trong mô hình Voting Classifier được xây dựng với đoạn mã Python trên, loại chiến lược bầu chọn nào được
+                sử dụng?
+                <img style="margin-top: 10px;" src="./anh/42.png" alt="42" />
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q42" id="q42-option1">
+                    <label for="q42-option1">Soft voting</label>
+                </li>
+                <li>
+                    <input type="radio" name="q42" id="q42-option2">
+                    <label for="q42-option2">Hard voting</label>
+                </li>
+                <li>
+                    <input type="radio" name="q42" id="q42-option3">
+                    <label for="q42-option3">Weighted voting</label>
+                </li>
+                <li>
+                    <input type="radio" name="q42" id="q42-option4">
+                    <label for="q42-option4">Ensemble voting</label>
+                </li>
+            </ul>
+            <div id="result-q42"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 43 -->
+        <div class="question-container">
+            <div class="question-title">
+                Logistic Regression thường được sử dụng để giải quyết bài toán nào trong các lựa chọn sau đây?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="q43" id="q43-option1">
+                    <label for="q43-option1">Phân loại</label>
+                </li>
+                <li>
+                    <input type="radio" name="q43" id="q43-option2">
+                    <label for="q43-option2">Vẽ biểu đồ dự đoán</label>
+                </li>
+                <li>
+                    <input type="radio" name="q43" id="q43-option3">
+                    <label for="q43-option3">Kiểm tra độ chính xác</label>
+                </li>
+                <li>
+                    <input type="radio" name="q43" id="q43-option4">
+                    <label for="q43-option4">Chia nhỏ dữ liệu</label>
+                </li>
+            </ul>
+            <div id="result-q43"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi 44 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy kết hợp đúng giữa các hàm về hình ảnh và mô tả chức năng tương ứng của chúng trong thư viện OpenCV
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="buoc1">Bước 1</label>
+                    <select id="buoc1" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc1"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc2">Bước 2</label>
+                    <select id="buoc2" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc2"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc3">Bước 3</label>
+                    <select id="buoc3" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc3"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc4">Bước 4</label>
+                    <select id="buoc4" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc4"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc5">Bước 5</label>
+                    <select id="buoc5" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc5"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc6">Bước 6</label>
+                    <select id="buoc6" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc6"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc7">Bước 7</label>
+                    <select id="buoc7" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc7"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="buoc8">Bước 8</label>
+                    <select id="buoc8" class="dropdown">
+                        <option value="chia sẻ dữ liệu">chia sẻ dữ liệu</option>
+                        <option value="chọn mô hình">chọn mô hình</option>
+                        <option value="xây dựng mô hình">xây dựng mô hình</option>
+                        <option value="tối ưu hóa mô hình">tối ưu hóa mô hình</option>
+                        <option value="đào tạo mô hình">đào tạo mô hình</option>
+                        <option value="đánh giá và điều chỉnh">đánh giá và điều chỉnh</option>
+                        <option value="kiểm thử mô hình">kiểm thử mô hình</option>
+                        <option value="tinh chỉnh cuối cùng">tinh chỉnh cuối cùng</option>
+                    </select>
+                    <div id="result-buoc8"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi 45 -->
+        <div class="question-container">
+            <div class="question-title">
+                Để thực hiện thao tác training dữ liệu, chúng ta sử dụng hàm nào?<br>
+                #Support Vector Machines<br>
+                model_svc SVC(probability=True)<br>
+                model_svc._____(x_train, y_train)<br>
+                (Viết thường, không có khoảng trắng)
+            </div>
+            <input type="text" id="q45" placeholder="Nhập tên hàm">
+            </ul>
+            <div id="result-q45"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 1 -->
+        <div class="question-container">
+            <div class="question-title">
+                Haar Cascade là một phương pháp nhận dạng đặc trưng dựa trên máy học (machine learning). Được phát triển
+                bởi các nhà nghiên cứu Viola và Jones vào năm nào?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt1" id="qt1-option1">
+                    <label for="qt1-option1">1998</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt1" id="qt1-option2">
+                    <label for="qt1-option2">2004</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt1" id="qt1-option3">
+                    <label for="qt1-option3">2001</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt1" id="qt1-option4">
+                    <label for="qt1-option4">2007</label>
+                </li>
+            </ul>
+            <div id="result-qt1"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 2 -->
+        <div class="question-container">
+            <div class="question-title">
+                Tại sao hình ảnh được chuyển đổi sang dạng đen trắng (grayscale) trước khi thực hiện nhận dạng khuôn
+                mặt?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt2" id="qt2-option1">
+                    <label for="qt2-option1">Để tạo hiệu ứng đồ họa</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt2" id="qt2-option2">
+                    <label for="qt2-option2">Để thực hiện việc hiển thị hình ảnh nhanh chóng</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt2" id="qt2-option3">
+                    <label for="qt2-option3">Để tăng độ chính xác của việc nhận dạng</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt2" id="qt2-option4">
+                    <label for="qt2-option4">Để giảm kích thước của hình ảnh</label>
+                </li>
+            </ul>
+            <div id="result-qt2"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 3 -->
+        <div class="question-container">
+            <div class="question-title">
+                PyTorch được phát triển bởi đội ngũ nào?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt3" id="qt3-option1">
+                    <label for="qt3-option1">Microsoft</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt3" id="qt3-option2">
+                    <label for="qt3-option2">Google</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt3" id="qt3-option3">
+                    <label for="qt3-option3">Facebook (Meta Al)</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt3" id="qt3-option4">
+                    <label for="qt3-option4">OpenAl</label>
+                </li>
+            </ul>
+            <div id="result-qt3"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 4 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy ghép nối tên và ý nghĩa của các kỹ thuật được sử dụng trong bài toán nhận diện khuôn mặt:
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="HaarCascades">Haar Cascades</label>
+                    <select id="HaarCascades" class="dropdown">
+                        <option value="Sử dụng phân lớp AdaBoo">Sử dụng phân lớp AdaBoo</option>
+                        <option value="Sử dụng mạng nơ-ron tích chập">Sử dụng mạng nơ-ron tích chập</option>
+                        <option value="Sử dụng mạng học sâu để tăng">Sử dụng mạng học sâu để tăng</option>
+                    </select>
+                    <div id="result-HaarCascades"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="CNN">Convolutional Neural Networks - CNN</label>
+                    <select id="CNN" class="dropdown">
+                        <option value="Sử dụng phân lớp AdaBoo">Sử dụng phân lớp AdaBoo</option>
+                        <option value="Sử dụng mạng nơ-ron tích chập">Sử dụng mạng nơ-ron tích chập</option>
+                        <option value="Sử dụng mạng học sâu để tăng">Sử dụng mạng học sâu để tăng</option>
+                    </select>
+                    <div id="result-CNN"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="DeepLearning">Deep Learning</label>
+                    <select id="DeepLearning" class="dropdown">
+                        <option value="Sử dụng phân lớp AdaBoo">Sử dụng phân lớp AdaBoo</option>
+                        <option value="Sử dụng mạng nơ-ron tích chập">Sử dụng mạng nơ-ron tích chập</option>
+                        <option value="Sử dụng mạng học sâu để tăng">Sử dụng mạng học sâu để tăng</option>
+                    </select>
+                    <div id="result-DeepLearning"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi thêm 5 -->
+        <div class="question-container">
+            <div class="question-title">
+                <img style="margin-bottom: 10px;" src="./anh/t5.png" alt="41" />
+                Tham số confidence được sử dụng để làm gì trong vòng lặp for?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt5" id="qt5-option1">
+                    <label for="qt5-option1">Độ tin cậy của khuôn mặt được phát hiện</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt5" id="qt5-option2">
+                    <label for="qt5-option2">Độ tin cậy của mô hình</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt5" id="qt5-option3">
+                    <label for="qt5-option3">Độ chệch của ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt5" id="qt5-option4">
+                    <label for="qt5-option4">Độ chệch của blob</label>
+                </li>
+            </ul>
+            <div id="result-qt5"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 6 -->
+        <div class="question-container">
+            <div class="question-title">
+                <img style="margin-bottom: 10px;" src="./anh/t6.png" alt="41" /><br>
+                Độ tin cậy được lưu trữ trong phần nào trong 4 chỉ số bên trên
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt6" id="qt6-option1">
+                    <label for="qt6-option1">Một trong 200 giá trị (phần thứ ba)</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt6" id="qt6-option2">
+                    <label for="qt6-option2">Một trong 7 giá trị (phần cuối)</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt6" id="qt6-option3">
+                    <label for="qt6-option3">Giá trị thứ hai (phần thứ hai)</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt6" id="qt6-option4">
+                    <label for="qt6-option4">Giá trị đầu tiên (phần thứ nhất)</label>
+                </li>
+            </ul>
+            <div id="result-qt6"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 7 -->
+        <div class="question-container">
+            <div class="question-title">
+                Điểm đặc trưng trong lĩnh vực thị giác máy tính thường được sử dụng để
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt7" id="qt7-option1">
+                    <label for="qt7-option1">Mô tả chất lượng hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt7" id="qt7-option2">
+                    <label for="qt7-option2">Tăng cường độ sáng của hình ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt7" id="qt7-option3">
+                    <label for="qt7-option3">Xác định và mô tả các đặc điểm quan trọng của đối tượng trong hình
+                        ảnh</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt7" id="qt7-option4">
+                    <label for="qt7-option4">Tạo ra các hiệu ứng đồ họa trong hình ảnh</label>
+                </li>
+            </ul>
+            <div id="result-qt7"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 8 -->
+        <div class="question-container">
+            <div class="question-title">
+                Để kết nối Google Colab với Google Drive và truy cập dữ liệu từ Drive, người lập trình sử dụng thư viện
+                nào và hàm nào sau đây?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" name="qt8" id="qt8-option1">
+                    <label for="qt8-option1">from google.colab.patches import cv2_imshow</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt8" id="qt8-option2">
+                    <label for="qt8-option2">import numpy as np</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt8" id="qt8-option3">
+                    <label for="qt8-option3">from google.colab import drive</label>
+                </li>
+                <li>
+                    <input type="radio" name="qt8" id="qt8-option4">
+                    <label for="qt8-option4">import os</label>
+                </li>
+            </ul>
+            <div id="result-qt8"></div> <!-- Kết quả -->
+        </div>
+
+        <!-- Câu hỏi thêm 9 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy sắp xếp thứ tự các bước trong Phát hiện ra các điểm đặc trưng trên khuôn mặt:
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="tbuoc1">Bước 1</label>
+                    <select id="tbuoc1" class="dropdown">
+                        <option value="shape_predictor = dlib.shape_">shape_predictor = dlib.shape_</option>
+                        <option value="face_shape = shape_predictor">face_shape = shape_predictor</option>
+                        <option value="face_shape_array = face_utils">face_shape_array = face_utils</option>
+                    </select>
+                    <div id="result-tbuoc1"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="tbuoc2">Bước 2</label>
+                    <select id="tbuoc2" class="dropdown">
+                        <option value="shape_predictor = dlib.shape_">shape_predictor = dlib.shape_</option>
+                        <option value="face_shape = shape_predictor">face_shape = shape_predictor</option>
+                        <option value="face_shape_array = face_utils">face_shape_array = face_utils</option>
+                    </select>
+                    <div id="result-tbuoc2"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="tbuoc3">Bước 3</label>
+                    <select id="tbuoc3" class="dropdown">
+                        <option value="shape_predictor = dlib.shape_">shape_predictor = dlib.shape_</option>
+                        <option value="face_shape = shape_predictor">face_shape = shape_predictor</option>
+                        <option value="face_shape_array = face_utils">face_shape_array = face_utils</option>
+                    </select>
+                    <div id="result-tbuoc3"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi thêm 10 -->
+        <div class="question-container">
+            <div class="question-title">
+                Hãy ghép nối các bước trong một dự án thị giác máy tính phục vụ cho việc nhận dạng khuôn mặt?
+            </div>
+            <ul class="options">
+                <li>
+                    <label for="t10buoc1">Bước 1</label>
+                    <select id="t10buoc1" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc1"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc2">Bước 2</label>
+                    <select id="t10buoc2" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc2"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc3">Bước 3</label>
+                    <select id="t10buoc3" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc3"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc4">Bước 4</label>
+                    <select id="t10buoc4" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc4"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc5">Bước 5</label>
+                    <select id="t10buoc5" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc5"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc6">Bước 6</label>
+                    <select id="t10buoc6" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc6"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc7">Bước 7</label>
+                    <select id="t10buoc7" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc7"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc8">Bước 8</label>
+                    <select id="t10buoc8" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc8"></div> <!-- Kết quả -->
+                </li>
+                <li>
+                    <label for="t10buoc9">Bước 9</label>
+                    <select id="t10buoc9" class="dropdown">
+                        <option value="Thu thập ảnh">Thu thập ảnh</option>
+                        <option value="Chuẩn bị dữ liệu">Chuẩn bị dữ liệu</option>
+                        <option value="Huấn luyện">Huấn luyện</option>
+                        <option value="Tôi ưu hóa mô hình">Tôi ưu hóa mô hình</option>
+                        <option value="Kiểm thử và đánh giá mô hình">Kiểm thử và đánh giá mô hình</option>
+                        <option value="Triển khai mô hình">Triển khai mô hình</option>
+                        <option value="Xây dựng giao diện người dùng">Xây dựng giao diện người dùng</option>
+                        <option value="Bảo mật và quản lý dữ liệu">Bảo mật và quản lý dữ liệu</option>
+                        <option value="Duy trì và cập nhật">Duy trì và cập nhật</option>
+                    </select>
+                    <div id="result-t10buoc9"></div> <!-- Kết quả -->
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+        <button class="submit-button" onclick="submitQuiz()">Nộp bài</button>
+
+        <!-- Hiển thị số câu đúng -->
+        <div id="total-correct" class="total-correct"></div>
+
+        <script>
+            // JavaScript để xử lý hiệu ứng cuộn
+            window.addEventListener('scroll', function () {
+                const button = document.querySelector('.submit-button');
+                if (window.scrollY > 100) { // Điều kiện khi cuộn xuống quá 100px
+                    button.classList.add('sticky');
+                } else {
+                    button.classList.remove('sticky');
+                }
+            });
+
+            // Hàm submitQuiz
+            function submitQuiz() {
+                alert("Bài đã được nộp!"); // Thay bằng logic thực tế của bạn
+            }
+        </script>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
